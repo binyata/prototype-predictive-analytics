@@ -10,5 +10,5 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["vite/client", "node", "jest"]
   },
-  "include": ["src", "jest.setup.ts"]
+  "include": ["src", "jest.setup.ts", "tsconfig.node.json"]
 }
