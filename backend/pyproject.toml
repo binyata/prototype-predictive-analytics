@@ -1,0 +1,25 @@
+[tool.taskipy.tasks]
+lint = "ruff check . --fix && isort . && black ."
+test = "pytest"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["app", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # errors, flake8, import rules
+ignore = ["E501"]         # if you let black handle line length
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+src_paths = ["app", "tests"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

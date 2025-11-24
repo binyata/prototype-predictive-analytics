@@ -1,0 +1,16 @@
+flask
+psycopg2-binary
+python-dotenv
+Watchdog
+flask-cors
+# ORM / DB
+flask_sqlalchemy
+flask_migrate
+# dev / tooling
+black
+isort
+ruff
+taskipy # task lint once installed to run linting commands for project
+pytest
+pytest-flask
+pre-commit
